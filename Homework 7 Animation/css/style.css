@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    width: 100%;
+    height: 752px;
+    position: relative;
+    z-index: -1;
+}
+.astronod{
+    position: absolute;
+    width: 10%;
+    bottom: 51px;
+    left: -147px;
+    filter: brightness(0.5) ;
+    z-index: 1;
+    animation: astro 24s 1;
+}
+.ufo{
+    position: absolute;
+    filter: brightness(0.8);
+    left: -337px;
+    top: 74px;
+    z-index: 1;
+    width: 20%;
+    animation: ufo 35s 1;
+}
+@keyframes ufo {
+    0%{
+        left: -337px;
+        top: 74px;
+        opacity: 1;
+    }
+    90%{
+        left: 825px;
+        top: 74px;
+        opacity: 1;
+    }
+    100%{
+        left: 1325px;
+        top: 74px; 
+        opacity: 0;
+    }
+}
+.rocket{
+    position: absolute;
+    top: 80px;
+    width: 18%;
+    right: 10rem;
+    filter: brightness(0.6);
+    z-index: 1;
+    animation: rck 10s 1 24s;
+}
+.fire_dust{
+    position: absolute;
+    z-index: 1;
+    width: 39%;
+    right: 0;
+    bottom: -81px;
+    opacity: 0;
+    animation: frdst 8s 1 23s;
+}
+@keyframes frdst {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.stars img{
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    filter: brightness(0.3);
+}
+.star1{
+    animation: str 2s infinite;
+    left: 177px;
+    top: 83px;
+}
+.star2{
+    animation: str 2s infinite;
+    left: 400px;
+    top: 200px;
+}
+.star3{
+    animation: str 2s infinite;
+    left: 500px;
+    top: 83px;
+}
+.star4{
+    animation: str 2s infinite;
+    left: 600px;
+    top: 150px;
+}
+.star5{
+    animation: str 2s infinite;
+    left: 700px;
+    top: 100px;
+}
+.star6{
+    animation: str 2s infinite;
+    left: 800px;
+    top: 100px;
+}
+.star7{
+    animation: str 2s infinite;
+    left: 1000px;
+    top: 100px;
+}
+.star8{
+    animation: str 2s infinite;
+    left: 1250px;
+    top: 100px;
+}
+.star9{
+    animation: str 2s infinite;
+    left: 1350px;
+    top: 120px;
+}
+.star10{
+    animation: str 2s infinite;
+    left: 900px;
+    top: 200px;
+}
+.star11{
+    animation: str 2s infinite;
+    left: 150px;
+    top: 60px;
+}
+.star12{
+    animation: str 2s infinite;
+    left: 200px;
+    top: 250px;
+}
+@keyframes str {
+    from{
+        filter: brightness(0.3);
+    }
+    to{
+        filter: brightness(1.2);
+    }
+}
+.fire{
+    position: absolute;
+    z-index: 1;
+    right: 151px;
+    bottom: -559px;
+    width: 24%;
+    opacity: 0;
+    animation: fr 10s 1 24s;
+}
+@keyframes fr {
+    from{
+        right: 151px;
+        bottom: -559px;
+        opacity: 0.9;
+    }
+    to{
+        right: 151px;
+        bottom: 267px;
+        opacity: 0.1;
+    }
+}
+@keyframes rck {
+    from{
+        right: 10rem;
+        top: 80px;
+    }    
+    to{
+        right: 10rem;
+        top: -666px;
+    }
+}
+.dusts img{
+    position: absolute;
+    width: 15%;
+    filter: brightness(0.6);
+    z-index: 1;
+    opacity: 0;
+}
+.dust1{
+    left: 55px;
+    bottom: 30px;
+    animation: dst 8s 1;
+}
+.dust2{
+    bottom: 30px;
+    left: 215px;
+    animation: dst 8s 1 4s;
+}
+.dust3{
+    bottom: 30px;
+    left: 396px;
+    animation: dst 8s 1 8s;
+}
+.dust4{
+    bottom: 30px;
+    left: 575px;
+    animation: dst 8s 1 12s;
+}
+.dust5{
+    bottom: 30px;
+    left: 765px;
+    animation: dst 8s 1 16s;
+}
+.dust6{
+    bottom: 30px;
+    left: 945px;
+    animation: dst 8s 1 20s;
+}
+
+@keyframes dst {
+    33%{
+        opacity: 0;
+    }
+    66%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+  
+@keyframes astro {
+    8%{
+        bottom: 133px;
+        left: -45px;
+        opacity: 1;
+    }
+    16%{
+        left: 45;
+        bottom: 30px; 
+        opacity: 1;
+    }
+    24%{
+        bottom: 133px;
+        left: 135px;
+        opacity: 1;
+    }
+    32%{
+        bottom: 30px;
+        left: 225px;
+        opacity: 1;
+    }
+    40%{
+        bottom: 133px;
+        left: 315px;
+        opacity: 1;
+    }
+    48%{
+        bottom: 30px;
+        left: 405px;
+        opacity: 1;
+    }
+    56%{
+        bottom: 133px;
+        left: 495px;
+        opacity: 1;
+    }
+    64%{
+        bottom: 30px;
+        left: 585px;
+        opacity: 1;
+    }
+    72%{
+        bottom: 133px;
+        left: 675px;
+        opacity: 1;
+    }
+    80%{
+        bottom: 30px;
+        left: 765px;
+        opacity: 1;
+    }
+    88%{
+        bottom: 133px;
+        left: 855px;
+        opacity: 1;
+    }
+    96%{
+        bottom: 30px;
+        left: 945px;
+        opacity: 1;
+    }
+    100%{
+        bottom: 30px;
+        left: 1050px;
+        opacity: 0;
+    }
+}
